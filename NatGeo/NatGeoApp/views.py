@@ -12,7 +12,7 @@ def searchView(request):
     address = AddressModel("1150 K Street", "Washington", "20005", "DC", "United States")
     test = AddressService.StoreAddress(address)
     context = {
-        "firstName": "Richardx",
+        "firstName": "Richard",
         "lastName": "Priest",
         "address": str(address)
     }
