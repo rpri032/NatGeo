@@ -1,9 +1,10 @@
 '''
-Created on Sep 18, 2016
+Created on Sep 19, 2016
 
 @author: RICH
 '''
 class Address(object):
     @staticmethod
     def StoreAddress(address):
-        return
+        return str(address)
+        

@@ -14,16 +14,17 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-NAT_GEO_BASE_DIR = "NatGeoApp"
+NAT_GEO_BASE_PROJECT = "NatGeoApp"
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*m$ym6ha%d!e9&hjsk9zog+6h((b*r7^kbe9(c7s!y9sr0&trs'
-
-# Google API Key
+# GOOGLE API KEY
 GOOGLE_API_KEY = 'AIzaSyB5HrxN_jcrhrhnAhIFXdxBmZQm9XxgROc'
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = '%lsq^3)^4-l9+$15b-longlk6@lclg!k8f)#q4b&7(uexpd_me'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'NatGeo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, NAT_GEO_BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, NAT_GEO_BASE_PROJECT, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

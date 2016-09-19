@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from NatGeoApp.views import index
-from NatGeoApp.views import addressSearch
+from NatGeoApp.views import indexView
+from NatGeoApp.views import searchView
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index),
-    url(r'^search/', addressSearch),
+    url(r'^$', indexView),
+    url(r'^search/$', searchView),
 ]
